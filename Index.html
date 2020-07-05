@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <script src = "Js/Jquery_3.2.1.js"></script>
+        <script src="Js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <title>My Jquery Page 2020</title>
+    <body>
+        <script>
+                window.addEventListener('resize', betterExpensive());
+                 let count = 0;
+     const getData = () =>{
+      //debugger;
+      //calls API and gets data
+      console.log('fetching data....', count++);
+    }
+  //Debouncing to limit the rate at which getData function is called!!!.....
+    const debounce = (fn, d) => {
+      let timer;
+    
+      return function(){
+        let context = this, args= arguments;
+        ///previous instance clear//
+        clearTimeout(timer); 
+        timer= setTimeout(function (param) { 
+          getData.apply(context, arguments);
+         }, d);
+        }
+      }
+    
+
+    const betterFunction = debounce(getData, 300);
+
+    //Throttling in function methods for web performance//
+    const Expensive = ()=>{
+      console.log('Hello....');
+    }
+    
+    let betterExpensive = throttle(Expensive, 100);
+   
+    function throttle(func, limit) {
+      let flag = true;
+      return function () {
+        let cxt = this, args= arguments;
+        func.apply(cxt, args);
+        flag = false;
+        if(flag){
+        setTimeout(function(){
+            //func()
+            flag =true;
+        },limit);
+      }
+    };
+}
+//window.addEventListener('resize', betterExpensive());
+        </script>
+      
+        <div id="navbar">
+            <a href="#Home">Home</a>
+            <a href="#News">News</a>
+            <a href="#Connect">Connect</a>
+          </div>
+          
+           <h2>Debouncing in Javascript</h2>
+    Enter your Search <input type="text" onkeyup="betterFunction()"></input>
+
+    </body>
+</html>
