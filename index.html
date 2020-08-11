@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <script src = "Js/Jquery_3.2.1.js"></script>
+        <script src="Js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <title>My Jquery Page 2020</title>
+    <body>
+        <script>
+              //  window.addEventListener('resize', betterExpensive());
+
+                function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+
+     let count = 0;
+    var getData = function() {
+        console.log("key pressed..." + count++)
+    }
+
+    let doSomeMagic = function(fn, delay) {
+        var timer;
+
+        return function() {
+            clearTimeout(timer);
+
+            timer = setTimeout(() => {
+                getData();
+            }, delay);
+        }
+    };
+    let betterFunction = doSomeMagic(getData, 300);
+    
+   
+        </script>
+      
+        <div id="navbar">
+            <a href="#Home">Home</a>
+            <a href="#News">News</a>
+            <a href="#Connect">Connect</a>
+          </div>
+<!-- <div ng-app>
+    {{formArrayName="name"}}
+</div> -->
+<button type="button" class="btn-default" ng-click="click()">
+   Press Ok Shweta
+</button>
+<button>Ajax</button>
+
+<br><br>
+<div>
+    <ul id="category">
+        <li id="laptops">laptops</li>
+        <li id="cameras">cameras</li>
+        <li id="shoes">shoes</li>
+    </ul>
+    <div id="form">
+         <input type="text" id="name" data-uppercase ></input> 
+         <!-- its our own attribute -->
+         <input type="text" id="pan"  data-uppercase></input>
+         <input type="text" id="location"></input>
+    </div>
+    <h2>Debouncing in Javascript</h2>
+    Enter your Search <input type="text" onkeyup="betterFunction()"></input>
+
+    <!-- <button onclick="betterFunction()">Clicking!!!</button> -->
+
+
+</div>
+        <div id="container">
+        <h4>Fruits</h4>
+        <ul>
+       <li class="solid" id="mango">Cherries111111</li>
+       <li class="solid">Mango</li>
+       <li class="solid" id="apple">Apple</li>
+        </ul>
+       <h4>Goals</h4>
+        <ul>
+       <li class="solid" style = 'background-color: aquamarine; max-width: 120px;'>FULL STACK DEVELOPER</li>
+       <li class="non-solid">TECHNOLOGY LEAD</li>
+       <li class="non-solid">MNC 15LPA</li>
+       <br>
+            <ul>
+                <li>Extjs 7.2.0</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>Thunderhead</li>
+              
+            </ul>
+
+        </ul>
+    </div>
+    <div id="container4">
+         <select id="select-menu">
+             <option value="" >Select a race</option>
+             <option value = "5" data-price="5000">5k</option>
+             <option value = "10" data-price="10,000">10k</option>
+             <option value = "21" data-price="15,000">Half-marathon</option>
+             <option value = "42" data-price="25,000">Marathon</option>
+         </select>
+         <div id="feedback">
+
+         </div>
+    </div>
+    <br/> <br/>
+    <div id="container5">
+        <input id="input-name" type="text" placeholder = "tell me you Name">
+        <a href="https://www.facebook.com/login.php">JIRA</a>
+        <div id="feedback-msg"></div><br/>
+        
+    </input>
+    </div>
+</br>
+    <div id="container2">
+        <!-- <input type="date">Enter Date</input>
+        <input type="button">Add</input> -->
+
+        <input type="text" placeholder="Name" required ></input><br>
+        <input type="text" placeholder="LastName"></input><br>
+        <input type="text" placeholder="EMail" required></input><br/><br>
+        <button>Submit</button>
+    </div>
+
+    <div id="container3">
+     
+        <div class="hot">
+            <div class="title">Hot</div>
+            <div class="item non-solid">Fire</div>
+            <div class="item solid">Lava</div>
+            <div class="item non-solid">Steam</div>
+        </div>
+        <br/>
+
+       
+        <div class="cold">
+            <div class="title">Cold</div>
+            <div class="item solid">Ice</div>
+            <div class="item non-solid" id="snow">Snow</div>
+            <div class="item non-solid">Rain</div>
+        </div>
+    </div>
+   
+    <div id='myContainer'> 
+        <div class="box">
+            <div class="box-button">Click!</div>
+        <!-- <button id="myButton">Click Me </button> -->
+        </div>
+    </div>
+    <br/>
+
+    <div id="myTabs">
+        <button class="tablinks" onclick="openCity(event, 'London')">Home</button>
+        <button class="tablinks" onclick="openCity(event, 'Business')">Business</button>
+        <button class="tablinks" onclick="openCity(event, 'Contact Us')">Contact Us</button>
+    </div>
+  
+    <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p>London is the capital city of England.</p>
+    </div>
+    <div id="Business" class="tabcontent">
+        <h3>Business</h3>
+        <p>Business Araea is Engineering, Software developement.</p>
+    </div>
+    <div id="ContactUs" class="tabcontent">
+        <h3>ContactUs</h3>
+        <p>Mumbai, pUne, London and New york city.</p>
+    </div>
+     <!--  -->
+ 
+
+
+    </div>
+    <br><br/>
+    <div id="admin-container">
+       
+            <input type="text" id="input-create-item"></input>
+            <button id="button-create-item">Add</button>
+
+    </div>
+    <div id="cart-container">
+    $0
+    </div>
+    <br/>
+
+
+    <!--Checkbox Forms in HTML5 and Js/Jquery_3.2.1.js-->
+    <div id="user-data">
+    <form id="cart-form" method="post" action="data/CardSubmit.json">
+    <label>Name</label>
+    <input type="text" name="name"></input>
+    <br/><br/>
+     <label>Email</label>
+    <input type="text" name="email"></input>
+    <br/>
+    <label>NewsLetter</label>
+    <input type="Checkbox" id="news-checkbox" name="newsCheckbox" checked></input>
+    <br/>
+
+      <div id="feedback">hello</div>
+    <select id="checkbox-frequency" name="checkboxFrequency">
+    <option>-</option>
+    <option selected>Weekly</option>
+    <option>Monthly</option>
+    </select>
+
+    <br/><br/>
+    <button id="submitCard">Submit</button>
+    <br/>
+  
+    </form>
+    
+    </div>
+
+
+    <div id= "container6">
+        <div class="item1">
+            <!-- Name , decription-->
+            <div class="name" style= 'background: aliceblue;'>New York</div>
+            <img src="assess/beach.jpg" alt="Image"></img>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste similique asperiores 
+                placeat soluta, reprehenderit id.
+            </div>
+            <div class="price">599</div>
+            <button class="item-add">Add to Cart</button>
+            <button class="item-remove">Remove</button>
+            <br/>
+           
+            <a class="more-info-link" href="#">More info</a>
+             <div class="more-info">
+            Lorem ipsum color css
+            </div>
+        </div>
+        <br style="clear: left;"/>
+        </div>
+ 
+    </body>
+</html>

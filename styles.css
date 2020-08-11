@@ -1,0 +1,128 @@
+.highlight {
+    background-color: red;
+}
+
+.highlight1 {
+    background-color: yellowgreen;
+}
+
+.item {
+    margin-left: 8px;
+}
+
+.highlight3 {
+    background-color: palevioletred;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+}
+
+.box-button {
+    background-color: blueviolet;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    translate: translateY(-50%);
+}
+
+body {
+    background-color: #EEE;
+}
+
+.myTabs button.active {
+    background-color: pink;
+}
+
+#container6 {
+    background-color: #ffffff;
+    padding: 12px;
+    /* height: 70%; */
+    margin: 12px;
+}
+
+.item1 {
+    width: 200px;
+    float: left;
+    margin: 4px;
+    /* border-width: 10px;
+     border-color: blue; */
+    /* height: 305px; */
+    background-color: peachpuff;
+    padding: 10px;
+}
+
+.item1 img {
+    width: 100%;
+}
+
+.item1 .name {
+    font-size: 22px;
+}
+
+.item1 .price {
+    margin-top: 8px;
+    margin-bottom: 9px;
+}
+
+.item1 .more-info {
+    display: none;
+}
+
+.item1 .More-Info {
+    display: none;
+}
+
+#cart-container {
+    background-color: black;
+    padding: 12px;
+    color: white;
+    width: 100%;
+}
+
+#checkbox-frequency {
+    display: none;
+}
+
+
+/* #navbar {
+    background-color: #333;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+#navbar a:hover{
+    background-color: peachpuff;
+    color:black;
+} */
+
+
+/* .highlight1{
+    color: red;
+}
+
+.solid{
+    color: seagreen;
+    text-decoration: red;
+    /* font-size: 5px; */
+
+
+/* .non-solid{
+    color: palevioletred;
+    
+} */

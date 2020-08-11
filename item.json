@@ -1,0 +1,27 @@
+{
+    "items": [{
+            "id": 1000,
+            "name": "New York",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste similique asperiores placeat soluta, reprehenderit id.",
+            "price": 599,
+            "moreInfo": "Lorem ipsum color css"
+        }, {
+
+            "id": 1001,
+            "name": "Recife",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste similique asperiores placeat soluta, reprehenderit id.",
+            "price": 874,
+            "moreInfo": "Lorem ipsum color css"
+        },
+        {
+            "id": 1002,
+            "name": "Shweta",
+            "description": " I will be working as Sr.full stack developer with 15 lpa soon inMNC firm",
+            "price": 111799,
+            "moreInfo": "Lorem ipsum color css"
+        }
+    ],
+    "data": "Hello to JQuery World",
+    "name": "Shweta",
+    "Message": "Shweta will become the Sr.Full Stack developer"
+}
